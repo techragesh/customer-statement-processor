@@ -45,6 +45,10 @@ Implement a REST service which receives the customer statement JSON as a POST da
     ```
     mvn spring-boot:build-image
     ```
+5. **Build Test Reports**
+    ```
+    mvn test site:site
+    ```
 
 ### Run application through Docker Image
 
@@ -68,6 +72,12 @@ Swagger API URL:
 ### Screenshots
 
 ![customer-api-swagger.png](customer-api-swagger.png)
+
+![customer-test-report-home.png](customer-test-report-home.png)
+
+![customer-test-report-jacoco.png](customer-test-report-jacoco.png)
+
+![customer-test-report-pitest.png](customer-test-report-pitest.png)
 
 ### Author
 **Ragesh Sharma**
