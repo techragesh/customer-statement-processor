@@ -15,19 +15,21 @@ Implement a REST service which receives the customer statement JSON as a POST da
 **Prerequisties**
 * Java 11
 * Maven 3.6.3
+* Docker 20.10.3 (Only need when you build docker image)
 
 **Dependencies**
 * Spring boot 2.4.2 - Spring Framework
 * Swagger 3.0.0 - REST API Documentation (Swagger)
 * lombok 1.18.16 - Java Library
 * Jacoco Plugin 0.8.2 - Unit Test Coverage Plugin
+* pitest 1.6.2 - Mutation Testing
 
 ### Execution
 
 1. **Checkout the source code**
     ```
-      git clone https://github.com/techragesh/customerapi
-      cd customerapi
+      git clone https://github.com/techragesh/customer-statement-processor.git
+      cd customer-statement-processor
     ```
 
 2. **Build the application**
@@ -43,7 +45,7 @@ Implement a REST service which receives the customer statement JSON as a POST da
 ### Run application through Docker Image
 
 ```
-docker run -p 8080:8080 --name "customer-statement-processor" customer-statement-processor:0.0.1-SNAPSHOT
+docker run -p 8090:8090 --name "customer-statement-processor" customer-statement-processor:0.0.1-SNAPSHOT
 
 ```
 
