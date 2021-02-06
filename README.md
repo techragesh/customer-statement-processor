@@ -41,6 +41,10 @@ Implement a REST service which receives the customer statement JSON as a POST da
     ```
     mvn spring-boot:run
     ```
+4. **Build the docker image**
+    ```
+    mvn spring-boot:build-image
+    ```
 
 ### Run application through Docker Image
 

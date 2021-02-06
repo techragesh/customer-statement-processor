@@ -86,15 +86,6 @@
 						</exclude>
 					</excludes>
 				</configuration>
-				<executions>
-					<execution>
-						<id>docker-image</id>
-						<goals>
-							<goal>build-image</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.pitest</groupId>
