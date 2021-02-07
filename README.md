@@ -57,7 +57,7 @@ docker run -p 8090:8090 --name "customer-statement-processor" customer-statement
 
 ```
 
-### REST API Docuumentation
+### REST API Documentation
 
 After running the application and browse the swagger api url
 
