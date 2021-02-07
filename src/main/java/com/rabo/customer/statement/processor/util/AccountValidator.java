@@ -3,9 +3,10 @@ package com.rabo.customer.statement.processor.util;
 import java.util.regex.Pattern;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
+import org.apache.commons.lang.StringUtils;
 
 /**
- * Custom Validate the IBAN Account Number
+ * Custom Validation for the IBAN Account Number
  *
  * @author Ragesh Sharma
  */
@@ -18,6 +19,6 @@ public class AccountValidator implements ConstraintValidator<AccountValidation, 
 
     @Override
     public boolean isValid(String accountNumber, ConstraintValidatorContext constraintValidatorContext) {
-        return ACCOUNT_NUMBER_PATTERN.matcher(accountNumber).matches();
+        return !StringUtils.isEmpty(accountNumber) && ACCOUNT_NUMBER_PATTERN.matcher(accountNumber).matches();
     }
 }
